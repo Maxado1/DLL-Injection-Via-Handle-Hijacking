@@ -190,13 +190,6 @@ The injector accepts either a process name or a numeric PID.
 
 ---
 
-## Limitations
-
-- Requires compatible DLL architecture
-- Protected processes may reject duplicated handles
-- Security software may detect or block remote memory operations
-- APC execution depends on thread state
-
 ---
 
 ## Project Structure
@@ -212,12 +205,6 @@ HandleHijack-Injector/
 ```
 
 ---
-
-## Disclaimer
-
-This project is intended **only for Windows internals research, reverse engineering, malware analysis, and authorized security testing**.
-
-Do not use it against systems or software you do not own or have explicit permission to test.
 
 ---
 
