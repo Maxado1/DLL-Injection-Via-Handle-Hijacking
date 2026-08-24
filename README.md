@@ -120,11 +120,7 @@ The injector automatically frees allocated memory and closes hijacked handles af
 - Automatic privilege enabling
 - Full DLL path resolution
 - `NtCreateThreadEx` execution
-- APC fallback injector
-- Administrator detection
-- Clean resource management
-- Console status output
-
+- Support Latest BlueStacks
 ---
 
 ## 🧪 NTAPI Usage
