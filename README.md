@@ -4,7 +4,7 @@
 
 ---
 
-## How It Works
+## 📌 How It Works
 
 Instead of opening the target process directly, HandleHijack Injector enumerates every process handle in the system using `NtQuerySystemInformation`, duplicates valid handles from privileged processes, and reuses an existing handle that already references the target process.
 
@@ -21,7 +21,7 @@ The entire workflow stays close to native Windows APIs by resolving NT functions
 
 ---
 
-## Architecture
+## 🧠 Architecture
 
 ```text
 ┌──────────────────────────────────────────────┐
@@ -56,7 +56,7 @@ The entire workflow stays close to native Windows APIs by resolving NT functions
 
 ---
 
-## Handle Hijacking
+## 📄 Handle Hijacking
 
 The injector avoids relying on a direct `OpenProcess` against the target.
 
@@ -82,7 +82,7 @@ Every duplicated handle is validated until one references the requested target p
 
 ---
 
-## Injection Pipeline
+## 🔬 Injection Pipeline
 
 ```text
 Target Process
@@ -127,7 +127,7 @@ The injector automatically frees allocated memory and closes hijacked handles af
 
 ---
 
-## NTAPI Usage
+## 🧪 NTAPI Usage
 
 Resolved dynamically from **ntdll.dll** at runtime.
 
@@ -142,26 +142,6 @@ Resolved dynamically from **ntdll.dll** at runtime.
 No static imports for these native functions.
 
 ---
-
-## Requirements
-
-| Requirement | Value |
-|------------|-------|
-| OS | Windows 10 / 11 |
-| Language | C++ |
-| Architecture | x64 / x86 (match target) |
-| Compiler | MSVC / Visual Studio |
-| Privileges | Administrator recommended |
-
----
-
-## Build
-
-```bash
-Visual Studio
-Configuration : Release
-Platform      : x64
-```
 
 Compile the project normally with the Windows SDK.
 
@@ -180,16 +160,6 @@ The injector accepts either a process name or a numeric PID.
 
 ---
 
-## Technical Notes
-
-- Case-insensitive process matching
-- Automatic environment variable expansion in DLL paths
-- Multiple access-mask fallback strategy
-- Handle validation before injection
-- Memory cleanup regardless of success
-
----
-
 ## Project Structure
 
 ```text
@@ -202,6 +172,6 @@ HandleHijack-Injector/
 └── README.md
 ```
 
-## Credits
+## 📌 Credits
 
 **Developed by Maxado God**
