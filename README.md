@@ -224,5 +224,3 @@ Do not use it against systems or software you do not own or have explicit permis
 ## Credits
 
 **Developed by Maxado God**
-
-Native Windows Handle Hijacking & DLL Injection Research.
