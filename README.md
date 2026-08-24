@@ -1,4 +1,4 @@
-# HandleHijack Injector
+# Maxado Injector
 
 > Native Windows handle hijacking and DLL injection using direct NTAPI calls — no `OpenProcess(PROCESS_ALL_ACCESS)` dependency, no Win32 wrapper reliance.
 
