@@ -190,8 +190,6 @@ The injector accepts either a process name or a numeric PID.
 
 ---
 
----
-
 ## Project Structure
 
 ```text
@@ -203,10 +201,6 @@ HandleHijack-Injector/
 ├── Handle Enumeration
 └── README.md
 ```
-
----
-
----
 
 ## Credits
 
