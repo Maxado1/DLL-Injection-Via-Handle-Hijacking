@@ -162,9 +162,6 @@ The injector accepts either a process name or a numeric PID.
 Maxado Injector/
 │
 ├── main.cpp
-├── HandleHijackInjector
-├── NTAPI Wrappers
-├── Handle Enumeration
 └── README.md
 ```
 
